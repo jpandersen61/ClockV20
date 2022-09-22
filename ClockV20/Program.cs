@@ -13,7 +13,10 @@ namespace ClockV20
             Clock c1 = new Clock("Klokken er: ");
             theGenerator.Pulse += c1.Tick;
             theGenerator.Pulse += c1.PrintTime;
-            
+
+            Clock c2 = new Clock("Klokken2 er: ");
+            theGenerator.Pulse += c2.Tick;
+            theGenerator.Pulse += c2.PrintTime;
 
             // Attach the relevant methods from the Clock objects 
             // to the Pulse event in theGenerator
